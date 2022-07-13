@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <section class = "mb-4">
+      <div class="container py-3">
+        <form method="POST">
+          {% csrf_token %}
+          <h2 class="text-center"> Update a Client</h2>
+          {{ form|crispy }}
+          <center><button type="submit" class="btn btn-primary mt-4 shadow">Update Client</button></center>
+        </form>
+      </div>
+    </section>
+{% endblock content %}
