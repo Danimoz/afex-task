@@ -1,3 +1,5 @@
+import django
+django.setup()
 from .base import *
 import dj_database_url
 # Override base.py settings here
