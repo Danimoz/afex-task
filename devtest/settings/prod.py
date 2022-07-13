@@ -20,7 +20,7 @@ DATABASES = {
         'NAME': 'afex',
         'USER': 'postgres',
         'PASSWORD': 'azubuined201.',
-        'HOST': 'dbs',
+        'HOST': 'db',
         'PORT': '',
     }
 }
