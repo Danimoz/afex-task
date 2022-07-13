@@ -5,6 +5,9 @@ class BaseModel(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        abstract = True
+
 
 class Client(BaseModel):
     cid = models.CharField(max_length=60, unique=True, db_index=True)
